@@ -1,0 +1,178 @@
+.page-journal-month-full,
+.page-journal-month-archives
+
+
+  margin-top: 20px
+
+
+
+
+
+  #main .contain
+    display: grid
+    grid-column-gap: 40px
+    grid-row-gap: 40px
+    grid-template-columns: 1fr 300px
+    grid-template-rows: auto auto
+    display: -ms-grid;
+
+
+
+
+
+
+    .main-content
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 2
+
+
+
+
+    .sidebar-second
+      grid-column-start: 2
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+
+
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-rows: auto auto
+
+
+
+
+
+
+    .views-field-title,
+    .view-journal-toc-by-month
+      h1
+        margin: 0
+        padding: 0
+        font-family: $font-serif
+        font-size: 2.8rem
+        font-weight: 400
+        color: #333
+        line-height: 1.4
+
+
+
+
+    .view-journal-toc-full-text,
+    .view-journal-toc-by-month
+      h3
+        padding: 4px 6px
+        margin: 1.6rem 0 0 0
+        background-color: #666
+        font-family: $font-serif
+        font-size: 1.8rem
+        font-weight: 400
+        color: #fff
+
+
+
+    .view-content
+        margin: 0
+
+        .views-row
+            padding: 16px 0 16px 0
+
+            span
+                display: block
+
+
+            .views-field-field-article-slug
+                display: inline-block
+                padding: 6px 12px
+                margin-bottom: 6px
+                border-radius: 20px
+                background-color: $pri-color
+                font-size: 1.2rem
+                line-height: 1
+                color: #fff
+                text-transform: uppercase
+
+
+            .views-field-title a
+                font-family: $font-serif
+                font-size: 1.7rem
+                line-height: 1.4
+                font-weight: 700
+                color: #222
+                text-decoration: none
+
+                &:hover
+                    color: $pri-color
+
+
+            .views-field-field-subtitle
+                font-family: $font-serif
+                margin: 2px 0 10px 0
+                font-size: 1.4rem
+                line-height: 1.4
+                font-weight: 700
+                color: #222
+                text-decoration: none
+
+
+
+
+            .views-field-field-toc-abstract,
+            .views-field-field-toc-abstract p,
+            .views-field-body,
+            .views-field-body p
+                margin: 2px 0 0 0
+                font-size: 1.3rem
+                line-height: 1.4
+                max-width: 90%
+                color: #555
+
+                a
+                  color: #111
+
+                  &:hover
+                    color: $pri-color-text
+
+                @media all and (max-width: 540px)
+                  font-size: 1.6rem
+                  line-height: 2.6rem
+
+                @media all and (max-width: 900px)
+                  max-width: 100%
+
+
+            .views-field-field-authorlist
+              font-size: 1.3rem
+              line-height: 1.4
+              color: #666
+              font-weight: 700
+
+
+              margin-top: 1rem
+
+
+
+
+
+
+
+
+
+
+
+
+
+

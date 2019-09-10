@@ -1,0 +1,114 @@
+.grid
+    margin: 10px;
+    @supports ( grid-area: auto )
+        margin: 0;
+
+
+
+.contentstack1-area
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    align-items: start
+    grid-template-columns: 43% auto 300px
+    grid-template-areas: "a1 breaking-news ad1" "a1 breaking-news ad2" "cta-newsletter cta-newsletter ad2"
+
+    @media all and (max-width: 1080px)
+        grid-template-columns: auto 300px
+        grid-template-areas: "a1 ad1" "a1 ad2" "breaking-news ad2" "breaking-news cta-newsletter" "breaking-news ."
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-areas: "a1" "cta-newsletter" "ad1" "breaking-news" "ad2"
+
+
+    #views-spotlight_news_lead_story-block
+      grid-area: a1
+      height: 100%
+
+      @media all and (max-width: 700px)
+        height: 400px
+      @media all and (max-width: 540px)
+        height: 300px
+
+
+    .block-dfp.block-odd
+      grid-area: ad1
+      height: 250px
+
+    .block-dfp.block-even
+       grid-area: ad2
+       height: 250px
+
+    .cta
+       grid-area: cta-newsletter
+
+
+
+
+    #views-breaking_top_five_news-block
+      grid-area: breaking-news
+      height: 100%
+
+
+
+.contentstack2-area
+    display: grid
+    grid-column-gap: 20px
+    grid-row-gap: 20px
+    align-items: start
+    grid-template-columns: 24% auto 300px
+    grid-template-areas: "approvals-actions featured trending" "approvals-actions featured ad3" "approvals-actions featured ."
+
+    @media all and (max-width: 1080px)
+        grid-template-columns: auto 300px
+        grid-template-areas: "featured featured" "approvals-actions trending" "approvals-actions ad3"
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-areas: "featured" "trending" "ad3" "approvals-actions"
+
+
+
+    #views-approvals_and_actions-block
+      grid-area: approvals-actions
+    #views-featured_articles-block
+      grid-area: featured
+    #views-top_trending-block
+      grid-area: trending
+    #dfp-ptc_300x250_3
+      grid-area: ad3
+      height: 250px
+
+
+
+
+
+
+
+
+.contentstack3-area
+    display: grid
+    grid-column-gap: 30px
+    grid-template-columns: 200px 1fr 1fr
+    grid-template-areas: "cur-thumb cur-blurb cur-top"
+
+    @media all and (max-width: 900px)
+        grid-row-gap: 30px
+        grid-template-columns: 200px auto
+        grid-template-areas: "cur-thumb cur-blurb" "cur-top cur-top"
+
+    @media all and (max-width: 600px)
+        grid-template-columns: 100%
+        grid-template-areas: "cur-thumb" "cur-blurb" "cur-top"
+
+
+    #views-current_issue_cover-block
+      grid-area: cur-thumb
+    #views-current_issue_blurb-block
+      grid-area: cur-blurb
+    #views-featured_current-block
+      grid-area: cur-top
+
+
+

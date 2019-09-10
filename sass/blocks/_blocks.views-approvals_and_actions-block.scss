@@ -1,0 +1,56 @@
+// _blocks.default.sass
+//
+// Place all default block styles here.
+// Individual block styles are saved as their own files in the format of
+//  - Example: _blocks.block-id.sass
+
+
+
+#views-approvals_and_actions-block {
+
+    h3 {
+      padding: 4px 6px;
+      margin: 0;
+      background-color: #666;
+      font-family: $font-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #fff;
+    }
+
+
+
+    ul {
+        list-style: none;
+        padding: 8px 0;
+        margin: 0;
+    }
+
+
+        li {
+            padding: 10px 8px;
+            margin: 0;
+        }
+
+            a {
+                font-family: $font-serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: $pri-color-text;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+
+
+            .views-field-field-b-head {
+                display: block;
+                margin-top: 4px;
+                font-size: 1.2rem;
+            }
+
+}

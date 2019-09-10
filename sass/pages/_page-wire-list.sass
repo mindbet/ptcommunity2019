@@ -1,0 +1,118 @@
+.page-headlines,
+.page-content-ptcommunity-industry-announcements-archive,
+.page-content-newswire-by-month
+
+
+
+
+
+
+
+
+
+
+
+
+  #main .contain
+    display: grid
+    grid-column-gap: 40px
+    grid-row-gap: 40px
+    grid-template-columns: 1fr 300px
+    grid-template-rows: auto auto
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 300px
+    -ms-grid-rows: auto auto
+
+
+
+    .main-content
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 3
+
+
+    .sidebar-second
+      grid-column-start: 2
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 3
+
+
+
+
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-rows: auto auto
+
+
+
+
+
+
+    .view-header
+      h1
+        margin: 2.4rem 0 0 0
+        padding: 0 0 0 0
+        font-family: $font-serif
+        font-size: 2.8rem
+        color: #333
+        font-weight: 700
+
+        @media all and (max-width: 540px)
+            font-size: 2.5rem
+
+
+
+
+
+    .view-content
+      margin: 8px 0 0 0
+
+      .views-row
+            margin: 16px 0 0 0
+
+            a
+                font-size: 1.6rem
+                font-weight: 400
+                color: $pri-color-text
+                text-decoration: none
+                line-height: 1.6
+
+                &:hover
+                    text-decoration: underline
+
+    //table for grid page
+    table
+      table-layout: fixed
+      max-width: 96%
+      tbody
+        border-top: none
+
+      tr
+        border-top: solid 1px #999999
+
+
+      td
+          font-size: 15px
+          padding: 4px 0 4px 4px
+          text-align: center
+
+          a
+                font-size: 1.4rem
+                font-weight: 400
+                color: $pri-color-text
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline
+
+      td:first-of-type
+        background-color: #dddddd
+        padding: 4px 0 4px 0
+
+
+
+
+

@@ -1,0 +1,209 @@
+.node-type-news-story,
+.node-type-wire-feed
+  margin-top: 20px
+
+
+  #main .contain
+    display: grid
+    grid-column-gap: 40px
+    grid-row-gap: 40px
+    grid-template-columns: 1fr 300px
+    grid-template-rows: auto auto
+    display: -ms-grid;
+    -ms-grid-columns: 1fr 300px
+    -ms-grid-rows: auto auto
+
+
+
+
+
+
+    .main-content
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 2
+
+
+
+
+    .sidebar-second
+      grid-column-start: 2
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+
+
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-rows: auto auto
+
+
+
+
+
+    .field-name-title
+      h1
+        margin: 2.4rem 0 0 0
+        padding: 0 0 0 0
+        font-family: $font-serif
+        font-size: 2.8rem
+        color: #333
+        font-weight: 700
+
+        @media all and (max-width: 540px)
+            font-size: 2.5rem
+
+
+    .field-name-field-b-head
+        font-size: 2.3rem
+        color: #333
+        margin: 16px 0 0 0
+        font-style: italic
+
+        @media all and (max-width: 540px)
+            font-size: 1.8rem
+
+    .field-name-post-date
+            margin: 16px 0 0 0
+            font-size: 1.6rem;
+            color: #666;
+
+
+    .field-name-body
+      margin: 40px 0 0 0
+
+      p
+        max-width: 90%
+        font-size: 1.8rem
+        line-height: 1.6
+        color: #555
+
+        @media all and (max-width: 540px)
+            font-size: 1.6rem
+            line-height: 1.6
+
+        @media all and (max-width: 900px)
+            max-width: 100%
+
+        a
+            color: #111
+
+            &:hover
+                color: $pri-color-text
+
+
+      ul,ol
+        margin-top: 1.6rem
+        li
+          font-size: 1.5rem
+          line-height: 1.6
+          max-width: 90%
+
+
+
+
+    .field-name-field-toc-abstract
+        margin: 0 0 16px 0
+        font-size: 2.3rem
+        font-style: italic
+        color: #333
+
+        @media all and (max-width: 540px)
+            font-size: 2rem
+
+
+    .field-name-built-author-1,
+    .field-name-built-author-2,
+    .field-name-built-author-3,
+    .field-name-built-author-4,
+    .field-name-built-author-5,
+    .field-name-built-author-6,
+    .field-name-built-author-7,
+    .field-name-built-author-8
+            font-size: 1.6rem
+            line-height: 1.4
+            color: #666
+            font-weight: 700
+
+            @media all and (max-width: 540px)
+                display: block
+
+
+    .field-name-citation
+        margin: 0 0 40px 0
+        font-size: 1.6rem
+        color: #666
+
+        &::after
+                content: '|'
+                margin-left: 8px
+
+                @media all and (max-width: 540px)
+                    content: none
+                    margin-left: 0
+
+    .field-name-field-pdf-version
+            display: inline-block
+            margin-left: 6px
+            font-size: 1.8rem
+
+
+    span.addtoany_list
+        display: block
+        margin-top: 30px
+
+        ul
+            list-style: none
+            margin: 0
+            padding: 0
+
+            li
+                display: inline-block
+                margin-right: 10px
+                font-size: 2.6rem
+
+                a
+                    color: $pri-color-text
+
+                    &:hover
+                        color: $pri-color
+
+.related
+    margin-top: 60px
+
+    .header
+        max-width: 100%
+        padding-bottom: 8px
+        font-family: $font-serif
+        font-size: 2.8rem
+        color: #444
+        border-bottom: 1px solid #ccc
+
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+
+        li
+            margin-bottom: 20px
+            font-family: $font-serif
+            font-size: 1.6rem
+
+            a
+                color: $pri-color-text
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline

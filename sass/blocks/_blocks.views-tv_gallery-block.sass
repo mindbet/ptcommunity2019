@@ -1,0 +1,138 @@
+// _blocks.default.sass
+//
+// Place all default block styles here.
+// Individual block styles are saved as their own files in the format of
+//  - Example: _blocks.block-id.sass
+
+
+
+
+#views-pt_tv_gallery-block
+
+
+    .view-header
+        margin-bottom: 20px
+        padding: 14px 0
+        border-top: 1px solid #222
+        border-bottom: 1px solid #ccc
+
+        span.gallerylabellead
+            display: inline-block
+            margin: 0 10px 0 0
+            font-family: $font-serif
+            font-size: 2rem
+            font-weight: 400
+
+        span.gallerylabelfollow
+            display: inline
+            font-size: 1.2rem
+
+
+
+
+
+
+
+
+    .view-content
+        display: flex
+
+
+
+        .views-row
+            position: relative
+            width: 200px
+            padding: 0 20px
+            border-right: 1px solid #ccc
+            display: flex
+            flex-direction: column
+
+            //IE10-11 fix
+            @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)
+                display: block
+
+            &:nth-child(5)
+                @media all and (max-width: 1000px)
+                    display: none
+            &:nth-child(4)
+                @media all and (max-width: 1000px)
+                    border-right: 0
+                @media all and (max-width: 800px)
+                    display: none
+            &:nth-child(3)
+                @media all and (max-width: 800px)
+                    border-right: 0
+                @media all and (max-width: 600px)
+                    display: none
+            &:nth-child(2)
+                @media all and (max-width: 600px)
+                    border-right: 0
+                @media all and (max-width: 400px)
+                    display: none
+            &:nth-child(1)
+                @media all and (max-width: 400px)
+                    border-right: 0
+
+            &:last-child
+                border-right: 0
+
+            .time
+                margin: auto 0 0
+                font-size: 1.2rem
+                color: #666
+
+            img
+                max-width: 100%
+                height: auto
+
+
+
+            .views-field-field-display-screenshot a
+              right: 0
+              font-size: 2.2rem
+              color: #333
+
+
+              &::after
+                    position: absolute
+                    z-index: 1
+                    top: 10px
+                    left: 30px
+                    content: "\f04b" //play
+                    font-family: "Font Awesome 5 Free"
+                    font-size: 1rem
+                    line-height: 1
+                    font-weight: 700
+                    color: #fff
+                    display: inline-block
+                    padding: 10px 14px
+                    background-color: $pri-color
+                    &:hover
+                        background-color: darken( $pri-color, 10% )
+
+
+            .views-field-title
+                margin-top: 8px
+                margin-bottom: 20px
+                font-size: 1.4rem
+                font-weight: 700
+                font-family: $font-serif
+
+            .views-field-title a
+                color: $pri-color-text
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline
+                    &::after
+                        background-color: darken( $pri-color, 10% )
+
+
+
+
+            .views-field-field-video-duration
+                    position: absolute
+                    bottom: 0
+
+
+

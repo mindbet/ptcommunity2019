@@ -1,0 +1,32 @@
+// _blocks.default.sass
+//
+// Place all default block styles here.
+// Individual block styles are saved as their own files in the format of
+//  - Example: _blocks.block-id.sass
+
+
+
+
+#views-current_issue_cover-block {
+
+
+    text-align: center;
+
+    img {
+                border: 1px solid #999;
+                margin-bottom: 10px;
+    }
+
+    .button {
+                width: 100%;
+                font-size: 1.8rem;
+                font-weight: 400;
+    }
+
+
+    a {
+                color: #fff;
+    }
+
+
+}

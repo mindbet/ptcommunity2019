@@ -1,0 +1,102 @@
+.page-journal-year
+
+
+  margin-top: 20px
+
+  #main .contain
+    display: grid
+    grid-column-gap: 40px
+    grid-row-gap: 40px
+    grid-template-columns: 1fr 300px
+    grid-template-rows: auto auto
+
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-rows: auto auto
+
+
+
+
+    .main-content
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 2
+
+
+
+
+    .sidebar-second
+      grid-column-start: 2
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+
+
+
+
+
+
+    h1, h2
+        margin: 0 0 16px 0
+        font-family: $font-serif
+        font-size: 2.8rem
+        color: #333
+
+        @media all and (max-width: 540px)
+            font-size: 2.5rem
+
+
+    .view-content
+      display: grid
+      grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+
+    .views-field-title
+          font-size: 15px
+          padding: 4px 0 8px 0
+
+          a
+                font-size: 1.4rem
+                font-weight: 400
+                color: $pri-color-text
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline
+
+
+    table
+      table-layout: fixed
+      tbody
+        border-top: none
+
+      tr
+        border-top: solid 1px #999999
+
+
+      td
+          font-size: 15px
+          padding: 4px 0 4px 4px
+          text-align: center
+
+          a
+                font-size: 1.4rem
+                font-weight: 400
+                color: $pri-color-text
+                text-decoration: none
+
+                &:hover
+                    text-decoration: underline
+

@@ -1,0 +1,37 @@
+.topad
+    position: fixed
+    z-index: 2
+    box-sizing: border-box
+    width: 100%
+    height: 120px
+    background-color: rgba(255,255,255,0.8)
+    text-align: center
+    padding: 20px 10px 10px 10px
+    box-shadow: 0px 4px 6px -2px rgba(0,0,0,0.2)
+
+    .close-button
+        background-color: $pri-color
+        color: #fff
+        padding: 2px 6px
+        font-size: 1.6rem
+
+    &.closed
+        opacity: 0
+        z-index: -1
+        transition: opacity 0.5s
+
+    @media all and (max-width: 790px)
+        opacity: 0
+        z-index: -1
+
+
+
+
+
+body
+    &.has-top-sticky-ad
+        header
+            padding-top: 140px
+
+            @media all and (max-width: 790px)
+                padding-top: 20px

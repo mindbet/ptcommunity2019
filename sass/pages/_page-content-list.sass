@@ -1,0 +1,200 @@
+.page-content-meeting-highlights,
+.page-content-health-care-and-law,
+.page-content-drug-forecast,
+.page-content-medication-errors,
+.page-content-prescription-washington
+
+
+
+  #main .contain
+    display: grid
+    grid-column-gap: 40px
+    grid-row-gap: 40px
+    grid-template-columns: 1fr 300px
+    grid-template-rows: auto auto
+
+
+
+
+
+
+    .main-content
+      grid-column-start: 1
+      grid-column-end: 2
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 1
+        grid-row-end: 2
+
+
+
+
+    .sidebar-second
+      grid-column-start: 2
+      grid-column-end: 3
+      grid-row-start: 1
+      grid-row-end: 2
+      @media all and (max-width: 700px)
+        grid-column-start: 1
+        grid-column-end: 2
+        grid-row-start: 2
+        grid-row-end: 3
+
+
+
+    @media all and (max-width: 700px)
+        grid-template-columns: 100%
+        grid-template-rows: auto auto
+
+
+
+
+    .view-header
+      h1,h2
+        margin: 0
+        padding: 0
+        font-family: $font-serif
+        font-size: 2.8rem
+        font-weight: 700
+        color: darken($pri-color, 15%)
+        line-height: 1.4
+        letter-spacing: -.3px
+
+
+
+
+    .view-journal-toc-full-text
+      h3
+        padding: 4px 6px
+        margin: 1.6rem 0 0 0
+        background-color: #666
+        font-family: $font-serif
+        font-size: 1.8rem
+        font-weight: 400
+        color: #fff
+
+
+
+    .view-content
+        margin: 0
+
+        .views-row
+            padding: 24px 0 0 0
+
+            span
+                display: block
+
+
+            .views-field-field-article-slug
+                display: inline-block
+                padding: 6px 12px
+                margin-bottom: 6px
+                border-radius: 20px
+                background-color: $pri-color
+                font-size: 1.2rem
+                line-height: 1
+                color: #fff
+                text-transform: uppercase
+
+
+            .field-name-title a
+                font-family: $font-serif
+                font-size: 1.8rem
+                line-height: 1.33
+                font-weight: 700
+                color: #222
+                text-decoration: none
+
+                &:hover
+                    color: $pri-color
+
+
+            .field-name-field-subtitle
+                font-family: $font-serif
+                margin: 2px 0 10px 0
+                font-size: 1.4rem
+                line-height: 1.4
+                font-weight: 700
+                color: #222
+                text-decoration: none
+
+
+
+
+            .field-name-field-toc-abstract,
+            .field-name-field-toc-abstract p
+                margin: 0 0 0 0
+                font-size: 1.5rem
+                line-height: 1.3
+                max-width: 90%
+                color: #555
+
+                a
+                  color: #111
+
+                  &:hover
+                    color: $pri-color-text
+
+                @media all and (max-width: 540px)
+                  font-size: 1.4rem
+                  line-height: 1.4
+
+                @media all and (max-width: 900px)
+                  max-width: 100%
+
+
+
+            .field-name-built-author-1,
+            .field-name-built-author-2,
+            .field-name-built-author-3,
+            .field-name-built-author-4,
+            .field-name-built-author-5,
+            .field-name-built-author-6,
+            .field-name-built-author-7,
+            .field-name-built-author-8
+                font-size: 1.3rem
+                line-height: 1.4
+                color: #666
+                font-weight: 700
+
+
+            .field-name-built-author-1
+              margin-top: .75rem
+
+
+
+ul.pager--infinite-scroll
+  margin: 3.2rem auto 0  auto
+  list-style-type: none
+  padding: 0
+
+  li
+      font-size: 17px;
+      padding: 9px 15px;
+      font-weight: 700;
+      display: inline-block;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      border-radius: 5px;
+      background-color: #56aba6;
+      color: white;
+
+      a
+          color: white;
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+// _blocks.default.sass
+//
+// Place all default block styles here.
+// Individual block styles are saved as their own files in the format of
+//  - Example: _blocks.block-id.sass
+
+
+
+
+#views-current_issue_blurb-block {
+
+    .blurb-heading {
+        font-family: $font-serif;
+        font-size: 2.6rem;
+        font-weight: 400;
+        margin: 0;
+    }
+
+        span.issue-title {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 6px;
+            padding: 4px 10px;
+            border-radius: 20px;
+            background-color: $pri-color;
+            font-family: $font-sans;
+            font-size: 1.2rem;
+            line-height: 1;
+            color: #fff;
+        }
+
+    .views-field-body {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+
+        p {
+          margin-top: 1em;
+        }
+
+        a {
+            color: $pri-color-text;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+
+
+
+    .views-field-field-digital-edition {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+
+        p {
+          margin-top: 1em;
+        }
+
+        a {
+            color: $pri-color-text;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+}
+
+
+}

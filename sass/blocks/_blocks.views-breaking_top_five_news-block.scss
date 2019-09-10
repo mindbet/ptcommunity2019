@@ -1,0 +1,42 @@
+// _blocks.default.sass
+
+
+
+// TRENDING
+
+
+
+#views-breaking_top_five_news-block {
+
+    .title {
+      padding: 4px 6px;
+      margin: 0;
+      background-color: #666;
+      font-family: $font-serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #fff;
+    }
+
+
+    .view-breaking-top-five-news {
+        margin: 12px 0 0 0;
+    }
+
+        .views-row {
+            padding: 12px 8px;
+
+            a {
+                font-family: $font-serif;
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: $pri-color-text;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+              }
+          }
+
+}
